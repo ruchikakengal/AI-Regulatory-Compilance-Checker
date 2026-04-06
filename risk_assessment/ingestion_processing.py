@@ -15,7 +15,7 @@ from risk_assessment.analyze_clauses import analyze_all_batches
 google_auth_file = "services.json"
 google_sheet_scope = ["https://www.googleapis.com/auth/spreadsheets"]
 #gsheet_id ="1NfQuHxr5e0wYBY2cSPnl7XRjulKIs36VQrlaPyNluPI" 
-gsheet_id ="1xGxPyijI7U2Ip_2l-XbEzwzxBskkv74kowPIjNrfArk"
+gsheet_id = os.getenv("GSHEET_ID")
 sheet_name = "Sheet1"
 
 creds = Credentials.from_service_account_file(google_auth_file, scopes=google_sheet_scope)
