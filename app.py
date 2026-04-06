@@ -2,7 +2,6 @@ import os
 import tempfile
 import base64
 import streamlit as st
-from dotenv import load_dotenv
 import pandas as pd
 from google.oauth2.service_account import Credentials
 import gspread
@@ -20,7 +19,7 @@ from risk_assessment.notification_alert import send_compliance_alert
 from config import ModelManager
 
 # Load environment variables
-load_dotenv()
+#load_dotenv()
 
 # ─────────────────────────────────────────────────────────────────────────────
 # CUSTOM CSS — Modern SaaS Dashboard Style
@@ -363,11 +362,16 @@ add_background_image()
 # Google Sheets
 # ─────────────────────────────────────────────────────────────────────────────
 GOOGLE_AUTH_FILE = "services.json"
-GSHEET_ID = os.getenv("GSHEET_ID")
+GSHEET_ID = st.secrets["GSHEET_ID"]
 SHEET_NAME = "Sheet1"
 
-creds = Credentials.from_service_account_file(
-    GOOGLE_AUTH_FILE, scopes=["https://www.googleapis.com/auth/spreadsheets"]
+import json
+
+google_creds = json.loads(st.secrets["GOOGLE_CREDENTIALS"])
+
+creds = Credentials.from_service_account_info(
+    google_creds,
+    scopes=["https://www.googleapis.com/auth/spreadsheets"]
 )
 gs_client = gspread.Client(auth=creds)          # ✅ fixed: was gspread.authorize()
 spreadsheet = gs_client.open_by_key(GSHEET_ID)
