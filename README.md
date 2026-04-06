@@ -92,7 +92,13 @@ F --> G[Risk Report & Suggestions]
 ## 🎬 Demo Preview
 
 <p align="center">
-  <img src="YOUR_DEMO_GIF_OR_SCREENSHOT_HERE" />
+  <a href="https://www.youtube.com/watch?v=Q1jS9WCM0wA">
+    <img src="https://img.youtube.com/vi/Q1jS9WCM0wA/0.jpg" width="800"/>
+  </a>
+</p>
+
+<p align="center">
+  🎥 Click the image above to watch the full demo
 </p>
 
 ---
