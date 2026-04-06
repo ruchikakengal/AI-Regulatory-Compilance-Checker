@@ -1,5 +1,4 @@
 import os
-import math
 import base64
 import smtplib
 from io import BytesIO
