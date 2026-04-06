@@ -93,7 +93,7 @@ F --> G[Risk Report & Suggestions]
 
 <p align="center">
   <a href="https://www.youtube.com/watch?v=Q1jS9WCM0wA">
-    <img src="https://img.youtube.com/vi/Q1jS9WCM0wA/0.jpg" width="800"/>
+    <img src="images/Screenshot 2026-04-06 123148.png" width="800"/>
   </a>
 </p>
 
