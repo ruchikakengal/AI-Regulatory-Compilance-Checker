@@ -26,7 +26,11 @@ It uses **Large Language Models (LLMs)** and **Retrieval-Augmented Generation (R
 This system significantly reduces manual effort and minimizes compliance risks in contract management.
 
 ---
+## Problem Statement 🎯
 
+Ensuring regulatory compliance in AI systems is complex and time-consuming. This project provides an AI-powered solution to analyze and validate compliance.
+
+---
 ## 🎯 Key Features
 
 ✔️ Automated contract compliance checking
